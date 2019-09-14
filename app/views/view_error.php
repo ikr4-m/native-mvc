@@ -27,7 +27,7 @@
 <body>
     <div class="container-fluid d-flex" style="height:100vh;">
         <div class="error-center text-center w-100 my-auto">
-            <?php header("HTTP/1.0 $data[code] $data[desc]") ?>
+            <?php http_response_code($data[code]) ?>
             <p class="text-dark" style="font-size:60px">Oops, <?= $data['code']; ?>: <?= $data['desc'] ?>!</p>
             <p class="text-dark" style="font-size:20px;margin-top:-0.5rem;">
                 <?php

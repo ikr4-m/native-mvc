@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <p>It works</p>
+    <p>
+        <a href="<?= BASEPATH ?>">It works</a>
+    </p>
     <?= json_encode($data['database']) ?>
 </body>
 
