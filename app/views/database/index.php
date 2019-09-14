@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nama</title>
+    <title>Test Database</title>
 </head>
 
 <body>
-    <h1>Saya <?= $data['nama'] ?> ganteng hehehe.</h1>
+    <p>It works</p>
+    <?= json_encode($data['database']) ?>
 </body>
 
 </html>

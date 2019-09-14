@@ -4,12 +4,12 @@ class Controller
 {
     public function view($view, $data = [])
     {
-        require_once './app/views/' . $view . '.php';
+        require './app/views/' . $view . '.php';
     }
 
     public function model($models)
     {
-        require_once './app/models/' . $models . '.php';
+        require './app/models/' . $models . '.php';
         $m = new $models;
         return $m;
     }

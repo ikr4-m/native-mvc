@@ -14,5 +14,5 @@ $GLOBALS['MYSQL_DATABASE'] = [
     'hostname' => 'localhost',
     'username' => 'root',
     'password' => 'root',
-    'database' => 'native-mvc'
+    'database' => 'proyek1_dashboard'
 ];

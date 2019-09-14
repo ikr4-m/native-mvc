@@ -11,13 +11,29 @@
     <script src="<?= BASEPATH ?>public/js/popper.min.js"></script>
     <script src="<?= BASEPATH ?>public/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?= BASEPATH ?>public/css/bootstrap.min.css">
+    <style>
+        body {
+            color: white;
+            overflow: hidden;
+        }
+
+        .container-fluid {
+            position: absolute;
+            top: -1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container d-flex" style="height:100vh">
+    <div class="container-fluid d-flex" style="height:100vh;">
         <div class="error-center text-center w-100 my-auto">
             <?php header("HTTP/1.0 $data[code] $data[desc]") ?>
-            <p style="font-size:60px">Oops, <?= $data['code']; ?>: <?= $data['desc'] ?>!</p>
+            <p class="text-dark" style="font-size:60px">Oops, <?= $data['code']; ?>: <?= $data['desc'] ?>!</p>
+            <p class="text-dark" style="font-size:20px;margin-top:-0.5rem;">
+                <?php
+                if (isset($data['caption'])) echo $data['caption'];
+                ?>
+            </p>
             <a href="<?= BASEPATH ?>" style="font-size:20px;margin-top:-0.5rem;">
                 Kembali ke halaman utama
             </a>

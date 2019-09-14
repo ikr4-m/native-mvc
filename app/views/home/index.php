@@ -11,6 +11,10 @@
 <body>
     <h1>Selamat datang di Website Saya</h1>
     <p>Alamat: <?= BASEPATH; ?></p>
+    <p>Data dari model: <?= $data['a'] ?></p>
+    <a href="<?= BASEPATH ?>home/test">Ke test</a>
+    <br>
+    <a href="<?= BASEPATH ?>database">Ke database</a>
 </body>
 
 </html>
